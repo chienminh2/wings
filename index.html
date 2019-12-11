@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+	<div class="wrapper">
+		<!--Side bar-->
+		<section class="sidebar">
+			<!--Navbar-->
+			<input type="checkbox" name="nav" id="check">
+			<label for="check">
+				<i class="fas fa-bars"></i>
+			</label>
+			<nav>
+				<div class="brand">
+					<a href="#" class="nav-link">Wings Of Hope</a>
+				</div>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#" class="nav-link">The Cause</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">2614 Gala</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Our Sponser</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">The Foundation</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<section class="main-content">
+			<div class="main-content-cta">
+				<h1>Wings</h1>
+				<h6>Of Hope</h6>
+				<div class="btn-group">
+					<a href="#" class="btn">Buy Ticket</a>
+					<a href="#" class="btn">Sponser Event</a>
+				</div>
+				<h1 class="date">November 14, 2019</h1>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="panc-notice">
+				<h1>Pancreatic Cancer</h1>
+			</div>
+			<div class="statistics">
+				<div class="item">
+					<i class="fas fa-users"></i>
+					<div class="item-desc">
+						<h1>45,364%</h1>
+						<p> Lorem ipsum dolor sit amet, consectetur adpisicing elit. Labore minus officiis perferendis reprehenderit sequi.</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<i class="fa fa-user-md"></i>
+					<div class="item-desc">
+						<h1>6,7%</h1>
+						<p> Lorem ipsum dolor sit amet, consectetur adpisicing elit. Labore minus officiis perferendis reprehenderit sequi.</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<i class="far fa-clock"></i>
+					<div class="item-desc">
+						<h1>70%</h1>
+						<p> Lorem ipsum dolor sit amet, consectetur adpisicing elit. Labore minus officiis perferendis reprehenderit sequi.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.menu-toggle').click(function(){
+			$('nav').toggleClass('active')
+			if($('nav').hasClass('active'))
+				$('.menu-toggle i').removeClass('fas fa-bars').addClass('fas fa-times')
+			else
+				$('.menu-toggle i').removeClass('fas fa-times').addClass('fas fa-bars')
+		})
+	})
+</script>	
+</body>
+</html>
